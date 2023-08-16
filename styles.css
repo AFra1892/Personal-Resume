@@ -77,7 +77,7 @@ main{
 }
 
 .main-right{
-   
+   background-color: aquamarine;
     height: 100%;
     width: 100%;
     
@@ -85,4 +85,39 @@ main{
 .main-image{
     height:400px;
     width: 100%;
+}
+.workstation{
+    background-color: rgb(229, 226, 222);
+}
+.workstation h1{
+    position: absolute;
+    left: 110px;
+    padding-top: 30px;
+}
+.my-work{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
+    
+}
+.my-work div{
+    background-color: aliceblue;
+    height: 400px;
+    width: 300px;
+    margin-left: 100px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(194, 190, 190);
+    padding: 20px 30px;
+
+}
+.my-work div:hover{
+    background-color: rgb(0, 149, 255);
+    margin-bottom: 30px;
+}
+
+footer{
+    height: 400px;
+    background-color: aquamarine;
 }
