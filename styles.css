@@ -3,3 +3,87 @@
     margin: 0;
     
 }
+
+header{
+    background-image: url(src/header-bg.jpg);
+    background-size: cover;
+    height:700px;
+    background-position: 25% 55%;
+}
+.header{
+    width: 100%;
+    height: 110px;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.inner-header{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.logo-container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+
+.navigation{
+    float: right;
+    height: 100%;
+
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 16px;
+    
+}
+
+main{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    
+    
+}
+.main-left{
+    background-color: greenyellow;
+    height: 100%;
+    width: 70%;
+    
+}
+
+.main-right{
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+    
+}
+.main-image{
+    height:400px;
+    width: 100%;
+}
