@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 
@@ -26,16 +27,19 @@ header{
 }
 
 .logo-container{
+    padding-top: 40px;
     height: 100%;
     display: table;
     float: left;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 
 .navigation{
     float: right;
     height: 100%;
-
+    
 }
 
 .navigation a{
@@ -43,6 +47,7 @@ header{
     display: table;
     float: left;
     padding: 0 20px;
+    text-decoration: none;
 }
 
 .navigation a li{
@@ -50,9 +55,17 @@ header{
     vertical-align: middle;
     height: 100%;
     font-size: 16px;
+    color: black;
+    padding: 0 15px;
     
 }
-
+.big-heading{
+    position: absolute;
+    width: 450px;
+    left: 265px;
+    top: 200px;
+    font-size: 35px;
+}
 main{
     height: 500px;
     width: 100%;
@@ -80,6 +93,7 @@ main{
    background-color: aquamarine;
     height: 100%;
     width: 100%;
+    padding: 50px 30px;
     
 }
 .main-image{
