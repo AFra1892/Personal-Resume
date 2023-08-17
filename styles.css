@@ -56,8 +56,14 @@ header{
     height: 100%;
     font-size: 16px;
     color: black;
-    padding: 0 15px;
+    transition: 0.5s;
     
+}
+ul:hover li{
+    filter: blur(5px);
+}
+ul li:hover{
+    filter: blur(0px);
 }
 .big-heading{
     position: absolute;
@@ -90,7 +96,6 @@ main{
 }
 
 .main-right{
-   background-color: aquamarine;
     height: 100%;
     width: 100%;
     padding: 50px 30px;
@@ -101,7 +106,7 @@ main{
     width: 100%;
 }
 .workstation{
-    background-color: rgb(229, 226, 222);
+    background-color: rgb(235, 234, 245);
 }
 .workstation h1{
     position: absolute;
@@ -133,5 +138,61 @@ main{
 
 footer{
     height: 400px;
-    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.footer-right{
+    background-color: rgb(136, 11, 11);
+    height: 100%;
+}
+
+
+
+
+/*icons*/
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px
+   }
+   
+   .gg-instagram::after,
+   .gg-instagram::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-instagram::after {
+    border: 2px solid;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: 3px
+   }
+   
+   .gg-instagram::before {
+    border-radius: 3px;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    right: 1px;
+    top: 1px
+   } 
