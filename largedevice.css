@@ -123,7 +123,11 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     
-    
+}
+@media screen and (max-width: 500px) {
+  .my-work {
+    grid-template-columns: 1fr;
+  }
 }
 .my-work div{
     background-color: aliceblue;
