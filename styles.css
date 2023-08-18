@@ -72,6 +72,10 @@ ul li:hover{
     top: 200px;
     font-size: 35px;
 }
+.big-heading:hover{
+  color: #007bb5;
+  font-size: 45px;
+}
 main{
     height: 500px;
     width: 100%;
