@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" media="screen and (min-width: 960px)" href="largedevice.css">
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="smalldevice.css">
+    <link rel="stylesheet" href="styles.css">
         <!--Google FONT UBUNTO-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,46 +20,52 @@
 
 
 
-    <header id="home">
-        <div class="header">
-        <nav class="inner-header">
-            <div class="logo-container">Personal Resume</div>
-            <ul class="navigation">
-                <a href="#home"><li>HOME</li></a>
-                <a href="#my-work"><li>MY WORK</li></a>
-                <a href="#contact"><li>CONTACT</li></a>
-                <a href="#contact"><li>INTERESET</li></a>
+    
+        <div class="section" id="section1">
+            <nav class="navbar">
+                <div class="left-nav">
+                    Personal Resume
+                </div>
+                
+                    <ul class="nav-list">
 
-            </ul>
-        </nav>
-    </div>
-    <div class="big-heading">
-        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
-    </div>
-    </header>
+                        <li> <a>HOME</a></li>
+                        <li> <a>ABOUT</a></li>
+                        <li> <a>MY WORK</a></li>
+                        <li> <a>CONTACT</a></li>
 
-
-
-
-
-
-
-    <main>
-        <div class="main">
-        <div class="main-left">
-            <img class="main-image" src="src/profile-img.jpg" >
+                    </ul>
+                
+            </nav>
+            
         </div>
-        <div class="main-right">
-            <h1>ABOUT ME</h1>
-            <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+    
+   
 
-    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
-            </p>
+
+
+
+
+
+
+    
+        <div class="section" id="section2">
+            <div class="main-left">
+                <img class="main-image" src="src/profile-img.jpg" >
+            </div>
+            <div class="main-right">
+                <h1>ABOUT ME</h1>
+                <p>
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+                </p>
+            </div>
         </div>
-    </div>
-    </main>
-    <div id="my-work" class="workstation">
+    
+
+
+<!--
+    <div class="section" id="section3">
         <h1>MY WORK</h1>
     
     <div class="my-work">
@@ -76,26 +81,31 @@
         </div>
     </div>
 </div>
-    <footer id="contact">
+-->
+
+    <div class="section" id="section4">
         <div class="footer-left">
             <h1>CONTACT ME</h1>
-              <div class="rounded-social-buttons">
-                                <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                                <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                 </div>
+                <div class="rounded-social-buttons">
+                        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
         </div>
         
         <div class="footer-right">
-            <form>
-            <input type="text" placeholder=" yoyr name" name="name">
-            <input type="text" placeholder=" your email" name="email">
-            <input class="message-text" type="text" placeholder="Write yoyr message" name="text">
-            <button>SUBMIT</button>
-        </form>
+            
+                <input type="text" placeholder=" yoyr name" name="name">
+                <input type="text" placeholder=" your email" name="email">
+                <input class="message-text" type="text" placeholder="Write yoyr message" name="text">
+                <button>SUBMIT</button>
+            
         </div>
-    </footer>
+    </div>
+
+
+
 <!--social media icons-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     <!--JS code-->

@@ -4,61 +4,64 @@
     font-family: 'Ubuntu', sans-serif;
     
 }
+.section{
+  height: 100vh;
+  display: flex;
+  font-size: 24px;
+  transition: transform 1s;
 
-header{
-    background-image: url(src/header-bg.jpg);
-    background-size: cover;
-    height:700px;
-    background-position: 25% 55%;
-}
-.header{
-    width: 100%;
-    height: 110px;
-    display: block;
-    display: flex;
-    align-items: center;
-}
-
-.inner-header{
-    width: 1000px;
-    height: 100%;
-    margin: 0 auto;
-    display: block;
-}
-
-.logo-container{
-    padding-top: 40px;
-    height: 100%;
-    display: table;
-    float: left;
-    font-size: 30px;
-    font-weight: 700;
 }
 
 
-.navigation{
-    float: right;
-    height: 100%;
-    
+
+
+
+
+
+
+
+
+
+.navbar{
+  background-color: #3b5998;
+  display: flex;
+  height: 10%;
+  width: 100%;
 }
 
-.navigation a{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0 20px;
-    text-decoration: none;
+.nav-list{
+  background-color: black;
+  width: 50%;
+  display: flex;
+  gap: 30px;
+justify-content: end; /* for list item to start from right of the page*/
+align-items: center;
+padding-right: 20px;
+
 }
 
-.navigation a li{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    font-size: 16px;
-    color: black;
-    transition: 0.5s;
-    
+.nav-list li{
+  list-style: none; /* for removing bullets*/
+  padding: 26px 5px;
+  transition: filter 1s;
+  font-size: 18px;
 }
+
+.nav-list li a{
+  text-decoration: none;
+  color: white;
+}
+
+.left-nav{
+  width: 50%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 ul:hover li{
     filter: blur(5px);
 }
@@ -76,79 +79,31 @@ ul li:hover{
   color: #007bb5;
   font-size: 45px;
 }
-main{
-    height: 500px;
-    width: 100%;
-    
-    display: flex;
+
+
+.main-left{
+  display: flex;
+    height: 100%;
+    width: 50%;
     align-items: center;
     justify-content: center;
-
-}
-.main{
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 70%;
-    
-    
-}
-.main-left{
-    height: 100%;
-    width: 70%;
     
 }
 
 .main-right{
+  margin-top: 94px;
     height: 100%;
-    width: 100%;
+    width: 50%;
     padding: 50px 30px;
     
 }
 .main-image{
-    height:400px;
-    width: 100%;
-}
-.workstation{
-    background-color: rgb(235, 234, 245);
-}
-.workstation h1{
-    position: absolute;
-    left: 110px;
-    padding-top: 30px;
-}
-.my-work{
-    height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    
-}
-@media screen and (max-width: 500px) {
-  .my-work {
-    grid-template-columns: 1fr;
-  }
-}
-.my-work div{
-    background-color: aliceblue;
-    height: 400px;
-    width: 300px;
-    margin-left: 100px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 5px rgb(194, 190, 190);
-    padding: 20px 30px;
-
-}
-.my-work div:hover{
-    background-color: rgb(0, 149, 255);
-    margin-bottom: 30px;
+    height:450px;
+    width: 500px;
 }
 
-footer{
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
+
 
 
 .footer-left{
@@ -158,13 +113,18 @@ footer{
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    width: 50%;
 }
 
 .footer-right{
+  display: flex;
     padding-top: 50px;
     height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
-.footer-right form{
+.footer-right {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,11 +132,11 @@ footer{
     gap: 20px;
     padding-right: 40px;
 }
-.footer-right form input{
-    height: 38px;
+.footer-right  input{
+    height: 48px;
     width: 100%;
 }
-.footer-right form button{
+.footer-right  button{
     width: 100px;
     background-color: #55acee;
     border-radius: 12px;
@@ -184,9 +144,47 @@ footer{
     height: 38px;
     
 }
-.footer-right form .message-text{
-    height:100px ;
+.message-text{
+    height:300px ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*icons*/
 body {
