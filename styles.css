@@ -110,6 +110,15 @@ ul li:hover{
     width: 500px;
 }
 
+.hobbies-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-top: 15px;
+  gap: 20px;
+  text-decoration: underline;
+
+}
 
 
 
