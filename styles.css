@@ -12,7 +12,10 @@
 
 }
 
-
+#section1{
+  background-image: url(src/header-bg.jpg);
+  background-size: cover;
+}
 
 
 
@@ -70,14 +73,19 @@ ul li:hover{
 }
 .big-heading{
     position: absolute;
-    width: 450px;
+    width: 4200px;
     left: 265px;
     top: 200px;
-    font-size: 35px;
+    font-size: 45px;
+    
+}
+.big-heading h2{
+  font-size: 45px;
+  text-decoration: underline;
 }
 .big-heading:hover{
   color: #007bb5;
-  font-size: 45px;
+  font-size: 50px;
 }
 
 
