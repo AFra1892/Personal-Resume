@@ -5,7 +5,7 @@ function handleClick(){
 }
 
 let currentSection = 0;
-
+let array = [1,2,3];
 const sections = document.querySelectorAll('.section');
 
 window.addEventListener('wheel',f);
@@ -20,4 +20,5 @@ function f(event){
         currentSection--;
     }
     sections[currentSection].scrollIntoView({behavior:'smooth'});
+    
 };
