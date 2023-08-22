@@ -4,6 +4,7 @@
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     outline: none;
+    color: var(--text-color);
     
 }
 .section{
@@ -217,208 +218,53 @@ span{
   background: var(--main-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer-left{
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
-}
-
-.footer-right{
+#section3{
   display: flex;
-    padding-top: 50px;
-    height: 100%;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  
 }
-.footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding-right: 40px;
+#section3 p{
+  font-size: .5rem;
 }
-.footer-right  input{
-    height: 48px;
-    width: 100%;
+#section3 .education-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
-.footer-right  button{
-    width: 100px;
-    background-color: #55acee;
-    border-radius: 12px;
-    border: none;
-    height: 38px;
-    
-}
-.message-text{
-    height:300px ;
+.education-row .education-column{
+  flex: 1 1 40rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*icons*/
-body {
-    background: #D0D8DB;
-    padding-top: 60px;
-    padding-bottom: 40px;
+.education-column .title{
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 2rem;
 }
 
-textarea {
-    resize: none;
+.education-column .education-box{
+  border-left: .2rem solid var(--main-color);
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-
-
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
-
-.rounded-social-buttons {
-  text-align: center;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
+.education-box .education-content{
   position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
+  padding-left: 2rem;
+
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+.education-content .content{
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid var(--main-color);
+  border-radius: .6rem;
+  margin-bottom: 2rem;
 }
 
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
-  font-size: 25px;
-}
 
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
-
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.twitter {
-  background: #55acee;
-}
-
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #55acee;
-  background: #fefefe;
-  border-color: #55acee;
-}
-
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
-
-.rounded-social-buttons .social-button.youtube {
-  background: #bb0000;
-}
-
-.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
-  color: #bb0000;
-  background: #fefefe;
-  border-color: #bb0000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
+.education-content .content .year{
+  font-size: 1.5rem;
+  
+  padding-bottom: .5rem;
+  color: var(--text-color);
 }
