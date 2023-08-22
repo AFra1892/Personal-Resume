@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    outline: none;
     
 }
 .section{
@@ -76,17 +78,80 @@ ul li:hover{
     width: 4200px;
     left: 265px;
     top: 200px;
-    font-size: 45px;
     
 }
 .big-heading h2{
   font-size: 45px;
   text-decoration: underline;
 }
-.big-heading:hover{
-  color: #007bb5;
-  font-size: 50px;
+
+
+.btn-box{
+  padding-top: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 22.5rem;
+  height: 3rem;
 }
+
+.btn-box .btn{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 8rem;
+  border: .2rem solid #55acee;
+  border-radius: .8rem;
+  z-index: 1;
+  background-color: #55acee;
+  transition: .5s;
+
+}
+.btn-box .btn:hover{
+  color: #55acee;
+}
+/* only for removing the bg color*/
+.btn-box .btn:nth-child(2){
+  background-color: transparent;
+  color: blue;
+}
+.btn-box .btn:nth-child(2):hover{
+color: black;
+}
+.btn-box .btn:nth-child(2)::before{
+  background-color: #55acee;
+}
+.btn-box .btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: -1;
+  transition: .5s;
+}
+.btn-box .btn:hover::before{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .main-left{
