@@ -455,9 +455,75 @@ span{
   height: 50%;
   padding: 1.5rem;
   font-size: .9rem;
-  columns: var(--text-color);
+  color: var(--text-color);
   background: transparent;
   border-radius: .6rem;
   border: .2rem solid var(--main-color);
 
+}
+
+#contact form .input-box .input-field input::placeholder,
+#contact form .textarea-field textarea::placeholder{
+  color: white;
+  
+  
+}
+
+
+#contact form .textarea-field{
+  position: relative;
+  margin: .8rem 0 2.7rem;
+  display: flex;
+  justify-content: center;
+}
+
+#contact form .textarea-field textarea{
+  resize: none;
+}
+
+#contact form .btn-box .btns{
+  cursor: pointer;
+}
+
+.footer{
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+
+}
+
+.footer-text p{
+  font-size: 1.6rem;
+}
+
+.footer-iconTop a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+ 
+  
+  border: .2rem solid var(--bg-color);
+  border-radius: .6rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.footer-iconTop a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second--color);
+  z-index: -1;
+  transition: .5s;
+}
+.footer-iconTop a:hover:before{
+  width: 100%;
 }
